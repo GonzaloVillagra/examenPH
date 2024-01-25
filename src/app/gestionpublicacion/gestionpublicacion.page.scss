@@ -1,0 +1,44 @@
+#contenedor {
+    padding: 20px;
+  }
+  
+  /* Estilos para el contenedor del título */
+  #contenedorTitulo ion-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    gap: 10px; 
+
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el contenedor de la descripción */
+  #contenedorDescripcion ion-textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el botón de tomar foto */
+  #contenedorCamara ion-button {
+    gap: 5px;
+    color: #fff; /* Color del texto */
+    background-color: #007bff; /* Color de fondo */
+  }
+  
+  /* Estilos para el contenedor de la imagen */
+  #contenedorImg ion-img {
+    width: 250px;
+    height: auto; 
+
+  }
+  
+  /* Estilos para el botón de guardar publicación */
+  ion-button[click="agregarPublicacion()"] {
+    color: #fff; /* Color del texto */
+    background-color: #28a745; /* Color de fondo */
+    margin-top: 10px;
+  }
+  

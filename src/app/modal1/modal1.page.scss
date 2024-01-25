@@ -1,0 +1,26 @@
+/* eliminar-publicacion-modal.component.scss */
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+  
+  ion-label {
+    font-size: 1.2rem; /* Tamaño de fuente del label */
+    margin-bottom: 16px; /* Margen inferior del label */
+  }
+  
+  #botonConfirmar {
+    --background: #2ba192; /* Color de fondo del botón Aceptar */
+    --color: #fff; /* Color del texto del botón Aceptar */
+    margin-right: 8px; /* Margen derecho del botón Aceptar */
+  }
+  
+  #botonEliminar {
+    --background: #2ba192; /* Color de fondo del botón Cancelar */
+    --color: #fff; /* Color del texto del botón Cancelar */
+  }
+  

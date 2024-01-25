@@ -1,0 +1,10 @@
+  constructor(private modalController: ModalController) {}
+
+  confirmarEliminacion(confirmado: boolean) {
+    this.modalController.dismiss(confirmado);
+  }
+
+  ngOnInit() {
+  }
+
+}

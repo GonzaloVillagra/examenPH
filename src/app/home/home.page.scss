@@ -1,27 +1,43 @@
-#container {
-  text-align: center;
+// styles.scss (o tu archivo de estilos)
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+#contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px; 
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-item {
+  width: 100%; 
+  margin-bottom: 16px; 
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+#contenedorImagen {
+  width: 250px;
+  height: auto;
+}
+#contenedorTitulo {
+  font-weight: bold; 
 }
 
-#container a {
-  text-decoration: none;
+#contenedorDescripcion {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between; 
+  gap: 100px; 
+  align-items: center;
 }
+
+#contenedorEliminar {
+  --color: #ffffff; // Cambia el color del botón de eliminar según tus preferencias
+}
+
+#contenedorBoton {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  --background: #3f68d8; // Cambia el color de fondo del botón según tus preferencias
+  --color: #fff; // Cambia el color del texto del botón según tus preferencias
+}
+
+// Agrega cualquier otro estilo que necesites según tu diseño

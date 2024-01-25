@@ -1,0 +1,47 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="paginaPrincipal()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Publicacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content id="contenedor">
+
+  
+  <ion-item id="contenedorTitulo" >
+    <ion-label position="stacked">Título</ion-label>
+    <ion-input [(ngModel)]="nuevaPublicacion.titulo" minlength="5" placeholder="Mínimo 5 caracteres"></ion-input>
+    
+  </ion-item>
+  
+  <ion-item id="contenedorDescripcion" >
+    <ion-label position="stacked">Descripción</ion-label>
+    <ion-input [(ngModel)]="nuevaPublicacion.descripcion" minlength="20" placeholder="Mínimo 20 caracteres"></ion-input>
+  </ion-item>
+
+  <ion-item id="contenedorCamara" >
+    <ion-button (click)="tomaImg()">Tomar Foto
+      <ion-icon slot="start" name="camera-outline"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-item id="contenedorImg" *ngIf="nuevaPublicacion.imagen" >
+    <img [src]="nuevaPublicacion.imagen"/>   
+</ion-item>
+
+
+  
+  <ion-button (click)="agregarPublicacion()">Guardar
+    <ion-icon slot="start" name="save-outline"></ion-icon>
+  </ion-button>
+
+  
+
+</ion-content>

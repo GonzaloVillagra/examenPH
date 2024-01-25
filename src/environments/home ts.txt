@@ -1,25 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
-import { addIcons } from 'ionicons';
-import { addCircle } from 'ionicons/icons';
-import { trashOutline } from 'ionicons/icons';
-import { Router } from '@angular/router';
-import { PublicacionesListService } from '../servicios/publicaciones-list.service';
-import { Publicacion } from '../modelo/publicacion';
-import { ModalController } from '@ionic/angular/standalone';
-import { Modal1Page } from '../modal1/modal1.page';
-
-@Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  standalone: true,
-  imports: [IonicModule, CommonModule],
-})
-
-export class HomePage implements OnInit{
-  
   publicaciones: Publicacion[] = [];
 
   constructor(
@@ -66,8 +44,3 @@ export class HomePage implements OnInit{
   }
 
 }
-  
-  
-
-  
-  
